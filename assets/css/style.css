@@ -336,7 +336,6 @@ button {
 .home__color-buttons {
   display: flex;
   justify-content: space-between;
-
   position: absolute;
   width: 50px;
   bottom: -30px;
