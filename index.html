@@ -25,9 +25,8 @@
   </head>
   <body>
     <div class="preloader" id="preloader">
-      <img src="./assets/imgs/preloader.png" alt="" class="preloader__img">
+      <img src="./assets/imgs/preloader.png" alt="" class="preloader__img" />
     </div>
-
     <!-- ================ Header Section ================ -->
     <header class="header" id="header">
       <div class="container">
@@ -36,7 +35,7 @@
             <i class="bx bxs-grid-alt"></i>
           </div>
           <a href="#" class="nav__logo">
-            <img src="./assets/imgs/favcion.png" alt="" class="nav__img">
+            <img src="./assets/imgs/favcion.png" alt="" class="nav__img" />
             SNEAKERS
           </a>
           <div class="nav__menu" id="nav-menu">
@@ -62,7 +61,54 @@
         </nav>
       </div>
     </header>
-
+    <main>
+      <section class="home">
+        <div class="container">
+          <div class="home__container">
+            <div class="home__data">
+              <span class="home__subtitle">Nike</span>
+              <h1 class="home__title">Air Max Motion 2</h1>
+              <p class="home__description">
+                Rule the streets in the Nike Air Max Motion 2 .They blend
+                performance details with streetwear.
+              </p>
+              <div class="home__actions">
+                <div class="home__sizes">
+                  <span class="home__size active">40</span>
+                  <span class="home__size">41</span>
+                  <span class="home__size">42</span>
+                </div>
+                <div class="home__amounts">
+                  <span><i class="bx bx-minus"></i></span>
+                  <div class="home__amount-num">1</div>
+                  <span><i class="bx bx-plus"></i></span>
+                </div>
+              </div>
+              <div class="home__price">
+                <span class="home__price-num">$99.00</span>
+                <a href="#" class="button home__price-btn">
+                  <span class="button__text">Add to cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+            <div class="home__sneaker">
+              <div class="home__shape black active">
+                <img src="./assets/imgs/imghome-black.png" alt="" class="home__img">
+              </div>
+              <div class="home__shape pink">
+                <img src="./assets/imgs/imghome-pink.png" alt="" class="home__img">
+              </div>
+              <div class="home__color-buttons">
+                <span class="home__color-button black active" id="black"></span>
+                <span class="home__color-button pink" id="pink"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

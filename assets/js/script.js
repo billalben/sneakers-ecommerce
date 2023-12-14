@@ -1,5 +1,5 @@
 //  ================= PRELOADER =================
-onload = () => {
+window.onload = () => {
   const preloader = document.getElementById("preloader");
 
   setTimeout(() => {
