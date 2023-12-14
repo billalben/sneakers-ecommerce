@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ================ VARIABLES  ================ */
+:root {
+  --header-height: 4rem;
+
+  --dark-color: hsl(0, 0%, 10%);
+  --body-color: hsl(0, 0%, 85%);
+  --section-color: linear-gradient(135deg, hsl(0, 0%, 70%), hsl(0, 0%, 30%));
+  --container-color: linear-gradient(135deg, hsl(0, 0%, 80%), hsl(0, 0%, 50%));
+  --hover-color: linear-gradient(90deg, hsl(0, 0%, 100%), hsl(0, 0%, 80%));
+  --white-color: hsl(0, 0%, 100%);
+
+  --body-font-family: "Poppins", sans-serif;
+  --biggest-font-size: 4rem;
+  --h1-font-size: 3rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.5rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.9rem;
+  --tiny-font-size: 0.75rem;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi: 600;
+  --font-bold: 700;
+
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+}
+@media (max-width: 992px) {
+  :root {
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 2.2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.9rem;
+    --small-font-size: 0.85rem;
+    --tiny-font-size: 0.7rem;
+  }
+}
+
+/* ================ BASE ================ */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--body-font-family);
+  font-size: var(--normal-font-size);
+  background: hsl(0, 0%, 85%);
+  color: var(--dark-color);
+}
+main {
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--font-bold);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  font-family: var(--body-font-family);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  border: none;
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
