@@ -21,3 +21,15 @@ colorButtons.addEventListener("click", (e) => {
       .classList.add("active");
   }
 });
+
+//  =========== change shoe sizes on home section ===========
+const shoeSizes = document.querySelectorAll(".home__size");
+
+shoeSizes.forEach((e) => {
+  e.addEventListener("click", function () {
+    shoeSizes.forEach((e) => {
+      e.classList.remove("active");
+    });
+    this.classList.add("active");
+  });
+});
