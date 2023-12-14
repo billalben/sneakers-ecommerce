@@ -33,3 +33,23 @@ shoeSizes.forEach((e) => {
     this.classList.add("active");
   });
 });
+
+//  =========== home increment & decrement button ===========
+const plusButton = document.querySelector(".home__amounts .bx-plus");
+const minusButton = document.querySelector(".home__amounts .bx-minus");
+const homeAmountNumber = document.querySelector(
+  ".home__amounts .home__amount-num"
+);
+let a = 1;
+
+plusButton.addEventListener("click", () => {
+  a++;
+  homeAmountNumber.innerText = a;
+});
+
+minusButton.addEventListener("click", () => {
+  if (a >= 1) {
+    a--;
+    homeAmountNumber.innerText = a;
+  }
+});
