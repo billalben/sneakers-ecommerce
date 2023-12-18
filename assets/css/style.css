@@ -695,6 +695,51 @@ button {
   transform: translateY(0);
 }
 
+/* ================ NEWSLETTER ================ */
+.newsletter.section {
+  padding-bottom: 5rem;
+}
+.newsletter__container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  background: var(--dark-color);
+  color: var(--white-color);
+  border-radius: 0.7rem;
+  padding: 4rem 0;
+}
+.newsletter__data {
+  text-align: center;
+}
+.newsletter__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-1);
+}
+.newsletter__description {
+  font-weight: var(--font-medium);
+}
+.newsletter__form {
+  background: var(--white-color);
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  display: flex;
+}
+.newsletter__input {
+  padding-right: 0.5rem;
+}
+.newsletter__input::placeholder {
+  font-weight: var(--font-medium);
+  color: var(--dark-color);
+}
+.newsletter .button {
+  font-size: var(--small-font-size);
+  padding: 1rem;
+  color: var(--white-color);
+}
+
 /* ================ SCROLL BAR ================ */
 ::-webkit-scrollbar {
   background-color: hsl(0, 0%, 80%);
