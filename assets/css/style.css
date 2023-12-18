@@ -740,6 +740,71 @@ button {
   color: var(--white-color);
 }
 
+/* ================ FOOTER ================ */
+.footer {
+  background: var(--section-color);
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: space-between;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--dark-color);
+  font-weight: var(--font-bold);
+  font-size: 1.2rem;
+  margin-bottom: var(--mb-1);
+}
+.footer__img {
+  width: 30px;
+  height: 30px;
+}
+.footer__description {
+  font-weight: var(--font-medium);
+}
+.footer__title {
+  font-size: 1.2rem;
+  margin-bottom: var(--mb-1);
+}
+.footer__list {
+  display: grid;
+  row-gap: 0.5rem;
+}
+.footer__link {
+  color: var(--dark-color);
+  font-weight: var(--font-medium);
+  display: block;
+  transition: 0.3s;
+}
+.footer__link:hover {
+  transform: translateX(-5px);
+}
+.footer__social {
+  display: flex;
+  align-self: flex-start;
+  gap: 1rem;
+}
+.footer__social-link {
+  display: inline-flex;
+  color: var(--dark-color);
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.footer__social-link:hover {
+  transform: translateY(-5px);
+}
+.footer__copy {
+  font-size: 0.6rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+.footer__copy a {
+  color: var(--white-color);
+}
+
 /* ================ SCROLL BAR ================ */
 ::-webkit-scrollbar {
   background-color: hsl(0, 0%, 80%);
