@@ -86,6 +86,15 @@ const featuredSwiper = new Swiper(".featured__swiper", {
   breakpoints: {
     992: {
       spaceBetween: 30,
+      slidesPerView: 3,
+    },
+    578: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+    },
+    365: {
+      spaceBetween: 15,
+      slidesPerView: 1,
     },
   },
 });
@@ -100,5 +109,19 @@ const womenSwiper = new Swiper(".women__swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    992: {
+      spaceBetween: 30,
+      slidesPerView: 3,
+    },
+    578: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+    },
+    365: {
+      spaceBetween: 15,
+      slidesPerView: 1,
+    },
   },
 });

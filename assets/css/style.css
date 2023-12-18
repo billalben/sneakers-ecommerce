@@ -511,6 +511,109 @@ button {
   font-weight: var(--font-medium);
 }
 
+/* ================ WOMEN SNEAKERS ================ */
+.women .swiper {
+  max-width: 800px;
+}
+.women .swiper-wrapper {
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "";
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: initial;
+  bottom: 0;
+  width: initial;
+  height: initial;
+  background: hsl(0, 0%, 20%);
+  color: var(--white-color);
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+.swiper-button-next {
+  right: calc(50% - 2.2rem);
+}
+.swiper-button-prev {
+  left: calc(50% - 2.2rem);
+}
+.women__card {
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  background: var(--container-color);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px hsl(0, 0%, 40%);
+  margin: 0 auto;
+  display: grid;
+}
+.women__tag {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  padding: 0.4rem;
+  letter-spacing: 2px;
+  position: absolute;
+  right: -20%;
+  top: 0;
+  height: 100%;
+  writing-mode: vertical-rl;
+  text-align: center;
+}
+.women__img {
+  width: 170px;
+  justify-self: center;
+  align-self: center;
+}
+.women__card,
+.women__tag,
+.women__img {
+  transition: 0.5s;
+}
+.women__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.women__link {
+  font-size: 1.3rem;
+  color: var(--dark-color);
+  display: inline-flex;
+  transition: 0.3s;
+}
+.women__link i {
+  font-weight: var(--font-medium);
+}
+.women__link:hover {
+  color: var(--white-color);
+}
+.women__prices {
+  display: grid;
+  text-align: center;
+  font-weight: var(--font-semi);
+}
+.women__discount {
+  font-size: var(--tiny-font-size);
+  text-decoration: line-through;
+}
+.women__price {
+  font-size: var(--small-font-size);
+}
+.women__card:hover {
+  padding-right: 3.5rem;
+}
+.women__card:hover .women__img {
+  transform: rotate(-30deg);
+}
+.women__card:hover .women__tag {
+  right: 0;
+}
+
 /* ================ SCROLL BAR ================ */
 ::-webkit-scrollbar {
   background-color: hsl(0, 0%, 80%);
