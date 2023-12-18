@@ -477,6 +477,40 @@ button {
   transition-delay: 0.3s;
 }
 
+/* ================ COLLECTION ================ */
+.collection__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.collection__card {
+  position: relative;
+  background: var(--container-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 0 0 1.2rem 1.5rem;
+  box-shadow: 0 2px 5px hsl(0, 0%, 40%);
+  display: flex;
+  height: 350px;
+}
+.collection__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 245px;
+}
+.collection__data {
+  align-self: flex-end;
+}
+.collection__title {
+  font-size: var(--h2-font-size);
+}
+.collection__description {
+  margin-bottom: var(--mb-1-5);
+  letter-spacing: 1px;
+  font-weight: var(--font-medium);
+}
+
 /* ================ SCROLL BAR ================ */
 ::-webkit-scrollbar {
   background-color: hsl(0, 0%, 80%);
