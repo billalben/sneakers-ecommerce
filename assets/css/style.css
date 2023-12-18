@@ -235,7 +235,9 @@ button {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-  padding-block: 10rem 8rem;
+  /* padding-block: 10rem 8rem; */
+  min-height: 100vh;
+  min-height: 100svh;
 }
 .home__data {
   width: 90%;
@@ -612,6 +614,31 @@ button {
 }
 .women__card:hover .women__tag {
   right: 0;
+}
+
+/* ================ OFFER ================ */
+.offer__container {
+  background: var(--container-color);
+  border-radius: 1rem;
+  box-shadow: 0 0px 20px hsl(0, 0%, 30%);
+  display: flex;
+  justify-content: center;
+}
+.offer__img {
+  width: 150px;
+  align-self: flex-start;
+}
+.offer__data {
+  text-align: center;
+  padding: 4rem 0;
+}
+.offer__title {
+  font-size: var(--h1-font-size);
+}
+.offer__description {
+  margin-bottom: var(--mb-1-5);
+  font-weight: var(--font-medium);
+  letter-spacing: 1px;
 }
 
 /* ================ SCROLL BAR ================ */
