@@ -1,0 +1,359 @@
+@media (max-width: 991px) {
+  /* ================ HOME ================ */
+  .home__title {
+    font-size: 2.3rem;
+  }
+  .home__description {
+    margin-bottom: var(--mb-2);
+  }
+  .home__sizes {
+    gap: 0.5rem;
+  }
+  .home__size {
+    width: 35px;
+    height: 35px;
+  }
+  .home__amounts span,
+  .home__amounts i {
+    width: 35px;
+    height: 35px;
+  }
+  .home__price-btn {
+    padding: 1rem 2rem;
+  }
+  .home__sneaker {
+    width: 300px;
+    height: 300px;
+  }
+  .home__shape {
+    width: 300px;
+    height: 300px;
+  }
+  .home__img {
+    left: -4rem;
+    width: 380px;
+  }
+
+  /* ================ FEATURED ================ */
+  .featured .swiper {
+    max-width: 730px;
+  }
+  .featured__card {
+    height: 295px;
+    width: 220px;
+  }
+  .featured__tag {
+    transform: rotate(-90deg) translate(-1.5rem, -1.2rem);
+  }
+  .featured__img {
+    width: 160px;
+    transform: rotate(0) translate(0.5rem, 3.5rem);
+  }
+  .featured__card:hover .featured__tag {
+    transform: rotate(0) translate(-0.7rem, 1rem);
+  }
+  .featured__card:hover .featured__img {
+    transform: rotate(-20deg) translate(0.5rem, -1.3rem);
+  }
+  .featured__data {
+    transform: translateY(12rem);
+  }
+  .featured__card:hover .featured__data {
+    transform: translateY(7rem);
+  }
+
+  /* ================ COLLECTION ================ */
+  .collection__container {
+    gap: 2rem;
+  }
+  .collection__card {
+    height: 300px;
+  }
+  .collection__img {
+    width: 200px;
+  }
+  .collection__description {
+    margin-bottom: var(--mb-1);
+  }
+  .collection .button {
+    padding: 0.7rem 1.4rem;
+    border-radius: 0.5rem;
+  }
+
+  /* ================ WOMEN SNEAKERS ================ */
+  .women .swiper {
+    max-width: 720px;
+  }
+  .women__card {
+    width: 220px;
+    height: 240px;
+  }
+  .women__img {
+    width: 150px;
+  }
+
+  /* ================ NEW COLLECTION  ================ */
+  .new__card:nth-child(1) {
+    grid-row: initial;
+    grid-column: 1/4;
+  }
+  .new__card {
+    gap: 1rem;
+  }
+  .new__img-arrivals {
+    width: 300px;
+  }
+  .new__data {
+    justify-self: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav {
+    justify-content: space-between;
+  }
+  .nav__toggle {
+    font-size: 1.3rem;
+    display: inline-flex;
+    cursor: pointer;
+  }
+  .nav__menu {
+    margin-left: unset;
+    position: fixed;
+    top: 4rem;
+    left: -100%;
+    width: 70%;
+    height: 100%;
+    padding: 3rem;
+    background: var(--container-color);
+    transition: 0.5s;
+  }
+  .nav__list {
+    flex-direction: column;
+  }
+  .nav__link {
+    text-transform: uppercase;
+  }
+  .show-menu {
+    left: 0;
+  }
+
+  /* ================ HOME ================ */
+  .home__container {
+    grid-template-columns: 1fr;
+  }
+  .home__data {
+    width: 100%;
+    order: 2;
+  }
+  .home__sneaker {
+    width: 100%;
+  }
+  .home__shape {
+    right: 0;
+    margin: auto;
+  }
+  .home__color-buttons {
+    position: absolute;
+    width: 25px;
+    height: 50px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: initial;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  /* ================ COLLECTION ================ */
+  .collection .container {
+    max-width: 576px;
+  }
+  .collection__container {
+    grid-template-columns: 1fr;
+  }
+
+  /* ================ NEW COLLECTION  ================ */
+  .new__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .new__card:nth-child(1) {
+    grid-row: initial;
+    grid-column: 1/3;
+  }
+  .new__img {
+    width: 180px;
+  }
+
+  /* ================ NEWSLETTER ================ */
+  .newsletter__container {
+    grid-template-columns: max-content;
+    padding: 3rem 1rem;
+  }
+
+  /* ================ FOOTER ================ */
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  /* ================ HOME ================ */
+  .home__container {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+  .home__actions {
+    margin-bottom: var(--mb-2);
+  }
+  .home__sneaker {
+    height: 240px;
+  }
+  .home__shape {
+    width: 240px;
+    height: 240px;
+  }
+  .home__img {
+    top: 1.5rem;
+    left: -3.3rem;
+    width: 300px;
+  }
+  .home__color-buttons {
+    width: 10px;
+    height: 30px;
+  }
+  .home__color-button {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* ================ FEATURED ================ */
+  .featured__card {
+    overflow: initial;
+  }
+
+  /* ================ COLLECTION ================ */
+  .collection__img {
+    width: 190px;
+  }
+  .collection__description {
+    font-size: var(--small-font-size);
+  }
+
+  /* ================ OFFER ================ */
+  .offer__data {
+    text-align: start;
+    padding: 4rem 0 4rem 1.5rem;
+  }
+  .offer__description {
+    font-size: var(--small-font-size);
+  }
+  .offer__img {
+    padding-right: 0.5rem;
+  }
+
+  /* ================ NEW COLLECTION  ================ */
+  .new__container {
+    gap: 2rem 1rem;
+  }
+  .new__card {
+    padding: 2rem 1rem;
+  }
+  .new .button {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  /* ================ NEWSLETTER ================ */
+  .newsletter__container {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem;
+  }
+  .newsletter__input {
+    width: 100%;
+  }
+  .newsletter .button {
+    font-size: 0.7rem;
+    padding: 1rem 0.3rem;
+    width: 120px;
+  }
+
+  /* ================ FOOTER ================ */
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+
+  /* ================ SALE ================ */
+  .pages {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 374px) {
+  .container {
+    width: calc(100% - 2rem);
+  }
+
+  /* ================ HOME ================ */
+  .home__title {
+    font-size: 2rem;
+  }
+  .home__sneaker {
+    height: 200px;
+  }
+  .home__shape {
+    width: 200px;
+    height: 200px;
+  }
+  .home__img {
+    top: 1.5rem;
+    left: -2.5rem;
+    width: 250px;
+  }
+
+  /* ================ COLLECTION ================ */
+  .collection__img {
+    width: 170px;
+  }
+
+  /* ================ OFFER ================ */
+  .offer__data {
+    padding: 3rem 0 3rem 1rem;
+  }
+  .offer__title {
+    font-size: 1.9rem;
+  }
+  .offer__img {
+    width: 120px;
+  }
+
+  /* ================ NEW COLLECTION  ================ */
+  .new__container {
+    grid-template-columns: 1fr;
+  }
+  .new__card:nth-child(1) {
+    grid-row: initial;
+    grid-column: initial;
+  }
+
+  /* ================ NEWSLETTER ================ */
+  .newsletter__container {
+    padding: 3rem 1rem;
+  }
+}
+
+/* ================ 2K & 4K DISPLAYS ================ */
+
+@media (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 3840px) {
+  body {
+    zoom: 2;
+  }
+}
