@@ -378,6 +378,118 @@ button {
   color: hsl(0, 0%, 85%);
 }
 
+/* ================ FEATURED ================ */
+.featured .swiper {
+  max-width: 980px;
+  padding-top: 2.5rem;
+}
+.featured .swiper-wrapper {
+  margin-bottom: 4rem;
+}
+.featured .swiper-slide {
+  /* becaus of swiperslide overflow */
+  position: static;
+}
+.swiper-pagination-bullet {
+  background-color: var(--dark-color);
+  transition: 0.3s;
+}
+.featured .swiper-pagination-bullet-active {
+  width: 20px;
+  height: 8px;
+  border-radius: 3px;
+}
+.featured .section-title {
+  margin-bottom: var(--mb-1);
+}
+.featured__card {
+  overflow: hidden;
+  background: var(--container-color);
+  border-radius: 1rem;
+  padding: 0 1.5rem;
+  height: 340px;
+  width: 290px;
+  box-shadow: 0 2px 5px hsl(0, 0%, 40%);
+  margin: 0 auto;
+}
+.featured__tag,
+.featured__img,
+.featured__data,
+.featured__title,
+.featured__price,
+.featured__description {
+  transition-duration: 0.5s;
+}
+.featured__tag {
+  position: absolute;
+  background: var(--dark-color);
+  font-weight: var(--font-semi);
+  text-transform: uppercase;
+  color: var(--white-color);
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  transform: rotate(-90deg) translate(-2rem, -1rem);
+}
+.featured__img {
+  position: absolute;
+  width: 200px;
+  transform: rotate(0) translate(1.5rem, 3.5rem);
+  filter: drop-shadow(0 0 2px hsla(0, 0%, 20%));
+}
+.featured__data {
+  transform: translateY(14rem);
+  text-align: center;
+}
+.featured__title {
+  text-align: center;
+  font-size: var(--h3-font-size);
+}
+.featured__price {
+  font-weight: var(--font-semi);
+  font-size: 1.1rem;
+  margin-bottom: var(--mb-1);
+  display: block;
+  text-align: center;
+}
+.featured__description {
+  font-size: var(--small-font-size);
+  margin-bottom: 1rem;
+  opacity: 0;
+}
+.featured__button {
+  font-weight: var(--font-semi);
+  padding: 0.8rem 1.5rem;
+  opacity: 0;
+}
+.featured__card:hover .featured__tag {
+  transform: rotate(0) translate(0, 1rem);
+}
+.featured__card:hover .featured__img {
+  transform: rotate(-20deg) translate(1.5rem, -1.5rem);
+}
+.featured__card:hover .featured__data {
+  transform: translateY(8.5rem);
+}
+.featured__card:hover .featured__description,
+.featured__card:hover .featured__button {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+/* ================ SCROLL BAR ================ */
+::-webkit-scrollbar {
+  background-color: hsl(0, 0%, 80%);
+  width: 0.6rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 40%);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 25%);
+}
+
 /* ================ preloader ================ */
 .preloader {
   position: fixed;

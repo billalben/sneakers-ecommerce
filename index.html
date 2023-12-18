@@ -16,7 +16,7 @@
     <!-- Swiper Library -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <!-- Main File -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -62,6 +62,7 @@
       </div>
     </header>
     <main>
+      <!-- ========== Home ========== -->
       <section class="home">
         <div class="container">
           <div class="home__container">
@@ -95,10 +96,18 @@
             </div>
             <div class="home__sneaker">
               <div class="home__shape black active">
-                <img src="./assets/imgs/imghome-black.png" alt="" class="home__img">
+                <img
+                  src="./assets/imgs/imghome-black.png"
+                  alt=""
+                  class="home__img"
+                />
               </div>
               <div class="home__shape pink">
-                <img src="./assets/imgs/imghome-pink.png" alt="" class="home__img">
+                <img
+                  src="./assets/imgs/imghome-pink.png"
+                  alt=""
+                  class="home__img"
+                />
               </div>
               <div class="home__color-buttons">
                 <span class="home__color-button black active" id="black"></span>
@@ -108,7 +117,101 @@
           </div>
         </div>
       </section>
+
+      <!-- ========== Featured Section ========== -->
+      <section class="featured section" id="featured">
+        <div class="container">
+          <h2 class="section-title">featured</h2>
+          <div class="featured__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="featured__card swiper-slide">
+                <div class="featured__tag">sale</div>
+                <img
+                  src="./assets/imgs/featured1.png"
+                  alt=""
+                  class="featured__img"
+                />
+                <div class="featured__data">
+                  <h3 class="featured__title">Nike Air Max</h3>
+                  <span class="featured__price">$159.99</span>
+                  <p class="featured__description">
+                    Nike Air Footwear basketball sneakers.
+                  </p>
+                  <a href="#" class="button featured__button">
+                    <span class="button__text">Buy now</span>
+                    <div class="button__hover-left"></div>
+                    <div class="button__hover-right"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="featured__card swiper-slide">
+                <div class="featured__tag">sale</div>
+                <img
+                  src="./assets/imgs/featured2.png"
+                  alt=""
+                  class="featured__img"
+                />
+                <div class="featured__data">
+                  <h3 class="featured__title">Nike Air Max</h3>
+                  <span class="featured__price">$139.99</span>
+                  <p class="featured__description">
+                    Nike Air Footwear basketball sneakers.
+                  </p>
+                  <a href="#" class="button featured__button">
+                    <span class="button__text">Buy now</span>
+                    <div class="button__hover-left"></div>
+                    <div class="button__hover-right"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="featured__card swiper-slide">
+                <div class="featured__tag">sale</div>
+                <img
+                  src="./assets/imgs/featured3.png"
+                  alt=""
+                  class="featured__img"
+                />
+                <div class="featured__data">
+                  <h3 class="featured__title">Nike Air Max</h3>
+                  <span class="featured__price">$169.99</span>
+                  <p class="featured__description">
+                    Nike Air Footwear basketball sneakers.
+                  </p>
+                  <a href="#" class="button featured__button">
+                    <span class="button__text">Buy now</span>
+                    <div class="button__hover-left"></div>
+                    <div class="button__hover-right"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="featured__card swiper-slide">
+                <div class="featured__tag">sale</div>
+                <img
+                  src="./assets/imgs/featured4.png"
+                  alt=""
+                  class="featured__img"
+                />
+                <div class="featured__data">
+                  <h3 class="featured__title">Nike Air Max</h3>
+                  <span class="featured__price">$199.99</span>
+                  <p class="featured__description">
+                    Nike Air Footwear basketball sneakers.
+                  </p>
+                  <a href="#" class="button featured__button">
+                    <span class="button__text">Buy now</span>
+                    <div class="button__hover-left"></div>
+                    <div class="button__hover-right"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
