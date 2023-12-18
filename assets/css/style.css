@@ -641,6 +641,60 @@ button {
   letter-spacing: 1px;
 }
 
+/* ================ NEW COLLECTION  ================ */
+.new__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.new__card:nth-child(1) {
+  grid-row: 1/3;
+}
+.new__card {
+  position: relative;
+  overflow: hidden;
+  background: var(--container-color);
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px hsl(0, 0%, 40%);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 1.5rem;
+}
+.new__img {
+  width: 200px;
+}
+.new__title {
+  margin-bottom: var(--mb-0-5);
+  font-size: var(--h2-font-size);
+}
+.new__price {
+  display: block;
+  margin-bottom: var(--mb-1-5);
+  font-weight: var(--font-semi);
+}
+.new .button {
+  padding: 1rem;
+  font-size: var(--small-font-size);
+}
+.new__cart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 5%, 0.5);
+  transition: 0.5s;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+}
+.new__card:hover .new__cart {
+  transform: translateY(0);
+}
+
 /* ================ SCROLL BAR ================ */
 ::-webkit-scrollbar {
   background-color: hsl(0, 0%, 80%);
