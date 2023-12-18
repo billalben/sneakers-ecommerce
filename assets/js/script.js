@@ -70,6 +70,18 @@ decrementBtn.addEventListener("click", () => {
   }
 });
 
+//  =========== show scrollup ===========
+window.addEventListener("scroll", scrollUp);
+
+function scrollUp() {
+  const scrollUp = document.getElementById("scrollup");
+  if (this.scrollY >= 200) {
+    scrollUp.classList.add("show-scrollup");
+  } else {
+    scrollUp.classList.remove("show-scrollup");
+  }
+}
+
 //  =========== swiper js.com ===========
 const featuredSwiper = new Swiper(".featured__swiper", {
   spaceBetween: 20,
@@ -124,4 +136,26 @@ const womenSwiper = new Swiper(".women__swiper", {
       slidesPerView: 1,
     },
   },
+});
+
+//  =========== scroll reveal js org ===========
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "50px",
+  duration: 2000,
+  delay: 300,
+});
+
+sr.reveal(`.swiper , .home__container`);
+sr.reveal(
+  `.new__card ,.footer__content ,.footer__social ,.sale__card ,.pages`,
+  {
+    interval: 200,
+  }
+);
+sr.reveal(`.collection__data ,.offer__data ,.newsletter__data`, {
+  origin: "left",
+});
+sr.reveal(`.collection__img ,.offer__img ,.newsletter__form`, {
+  origin: "right",
 });

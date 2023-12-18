@@ -805,6 +805,29 @@ button {
   color: var(--white-color);
 }
 
+/* ================ SCROLL UP ================ */
+.scrollup {
+  background: var(--dark-color);
+  color: var(--white-color);
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  display: inline-flex;
+  border-radius: 0.25rem;
+  opacity: 0.8;
+  transition: 0.2s;
+
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  z-index: 99;
+}
+.scrollup:hover {
+  opacity: 1;
+}
+.show-scrollup {
+  bottom: 3rem;
+}
+
 /* ================ SCROLL BAR ================ */
 ::-webkit-scrollbar {
   background-color: hsl(0, 0%, 80%);
