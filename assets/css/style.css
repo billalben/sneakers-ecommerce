@@ -797,11 +797,100 @@ button {
   transform: translateY(-5px);
 }
 .footer__copy {
-  font-size: 0.6rem;
+  font-size: 0.825rem;
   text-align: center;
   margin-top: 5rem;
 }
 .footer__copy a {
+  color: var(--white-color);
+}
+
+/* ================ SALE ================ */
+.sale {
+  margin-top: 3rem;
+}
+.sale__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.sale__card {
+  background: var(--container-color);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 2px hsl(0, 0%, 40%);
+}
+.sale__tag {
+  position: absolute;
+  background: var(--dark-color);
+  font-weight: var(--font-semi);
+  font-size: var(--small-font-size);
+  text-transform: uppercase;
+  color: var(--white-color);
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  transition: 0.3s;
+  transform: rotate(-90deg) translate(0, -0.8rem);
+}
+.sale__img {
+  width: 150px;
+  margin: auto;
+  transform: translateY(1.5rem);
+  transition: 0.3s;
+}
+.sale__data {
+  transform: translateY(2rem);
+  transition: 0.3s;
+}
+.sale__price {
+  display: block;
+  font-weight: var(--font-semi);
+  margin-bottom: var(--mb-0-5);
+}
+.sale__button {
+  padding: 0.8rem 1.2rem;
+  transform: translateY(6rem);
+}
+.sale__card:hover .sale__img {
+  transform: translateY(-0.5rem) rotate(-10deg);
+}
+.sale__card:hover .sale__data {
+  transform: translateY(0);
+}
+.sale__card:hover .sale__button {
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.sale__card:hover .sale__tag {
+  transform: rotate(0) translate(0, -0.5rem);
+}
+.pages {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+  margin: 1.5rem 0.5rem;
+}
+.page {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--container-color);
+  font-weight: var(--font-bold);
+  border-radius: 0.2rem;
+  transition: 0.3s;
+}
+.page i {
+  font-size: 1.3rem;
+}
+.page:hover {
+  background: var(--dark-color);
   color: var(--white-color);
 }
 
@@ -817,7 +906,7 @@ button {
   transition: 0.2s;
 
   position: fixed;
-  right: 1rem;
+  right: 1.5rem;
   bottom: -30%;
   z-index: 99;
 }
@@ -825,7 +914,7 @@ button {
   opacity: 1;
 }
 .show-scrollup {
-  bottom: 3rem;
+  bottom: 2rem;
 }
 
 /* ================ SCROLL BAR ================ */
