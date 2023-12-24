@@ -3,7 +3,7 @@ window.onload = () => {
   const preloader = document.getElementById("preloader");
 
   setTimeout(() => {
-    preloader.style.display = "none";
+    preloader.classList.add("remove")
   }, 3000);
 };
 

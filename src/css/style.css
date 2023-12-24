@@ -948,6 +948,11 @@ button {
     hsla(0, 0%, 30%, 0.4)
   );
   backdrop-filter: blur(20px);
+  transition: 500ms ease;
+}
+.preloader.remove {
+  visibility: hidden;
+  opacity: 0;
 }
 .preloader__img {
   width: 150px;
