@@ -3,7 +3,7 @@
 
 ### Overview
 
-[View Demo](https://billalben.github.io/Sneakers-Ecommerce-Landing-page-Design/)
+[View Demo](https://billalben.github.io/sneakers-ecommerce/)
 
 This project is a responsive website built using HTML, CSS, and JavaScript.
 
