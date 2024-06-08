@@ -405,7 +405,6 @@ button {
   margin-bottom: var(--mb-1);
 }
 .featured__card {
-  overflow: hidden;
   background: var(--container-color);
   border-radius: 1rem;
   padding: 0 1.5rem;
@@ -413,6 +412,9 @@ button {
   width: 290px;
   box-shadow: 0 2px 5px hsl(0, 0%, 40%);
   margin: 0 auto;
+}
+.featured__card:not(:hover) {
+  overflow: hidden;
 }
 .featured__tag,
 .featured__img,
